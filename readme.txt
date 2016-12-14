@@ -1,18 +1,18 @@
 === WooCommerce Add to Cart by Product ===
-Contributors: jonathanbossenger
-Donate link: http://www.psykrotek.co.za/donate
-Tags: wordpress, plugin, template
+Contributors: psykro
+Donate link: http://https://jonathanbossenger.com/buy-me-a-coffee/
+Tags: woocommerce, add to cart
 Requires at least: 3.9
-Tested up to: 4.0
+Tested up to: 4.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is where you craft a short, punchy description of your plugin
+A simpler WooCommerce add to cart shortcode
 
 == Description ==
 
-This is where you can give a much longer description of your plugin that you can use to explain just how it awesome it really is.
+The plugin creates a shortcode [add_to_cart_by_product] which can be used in the editor area of any WooCommerce product. It will then render the default WooCommerce 'add to cart' button, but without the user needed to specify the product id.
 
 == Installation ==
 
@@ -22,26 +22,8 @@ Installing "WooCommerce Add to Cart by Product" can be done either by searching 
 1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Screenshots ==
-
-1. Description of first screenshot named screenshot-1
-2. Description of second screenshot named screenshot-2
-3. Description of third screenshot named screenshot-3
-
-== Frequently Asked Questions ==
-
-= What is the plugin template for? =
-
-This plugin shell is designed to help you get started with any new WordPress plugin.
-
 == Changelog ==
 
 = 1.0 =
-* 2012-12-13
-* Initial release
-
-== Upgrade Notice ==
-
-= 1.0 =
-* 2012-12-13
+* 2016-12-14
 * Initial release
