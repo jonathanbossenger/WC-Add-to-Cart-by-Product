@@ -1,6 +1,6 @@
 <?php
-/*
- * Plugin Name: WooCommerce Add to Cart by Product
+/**
+ * Plugin Name: WC Add to Cart by Product
  * Version: 1.0
  * Plugin URI: http://jonathanbossenger.com/
  * Description: Provides a simpler add to cart shortcode for WooCommerce products.
@@ -9,7 +9,7 @@
  * Requires at least: 4.0
  * Tested up to: 4.0
  *
- * Text Domain: atcbp
+ * Text Domain: wc-add-to-cart-by-product
  * Domain Path: /lang/
  *
  * @package WordPress
@@ -26,6 +26,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
+
+	function wcatc_load_plugin_textdomain() {
+		load_plugin_textdomain( 'my-plugin', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+	}
+	add_action( 'plugins_loaded', 'wcatc_load_plugin_textdomain' );
+
+
 	/**
 	 * Check if the shortcode has been registered elsewhere
 	 */
@@ -35,7 +42,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		 * Output the WooCommerce add to cart button, based on the product being rendered.
 		 * @return string
 		 */
-		function cdbl_wc_direct_add_to_cart_shortcode(){
+		function wcatc_direct_add_to_cart_shortcode(){
 			global $product;
 			if ( $product ) {
 				if ( 'instock' == $product->stock_status ) {
@@ -52,7 +59,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		 * Adds the add_to_cart_by_product shortcode
 		 */
 		if ( !shortcode_exists( 'add_to_cart_by_product' ) ) {
-			add_shortcode( 'add_to_cart_by_product' , 'cdbl_wc_direct_add_to_cart_shortcode' );
+			add_shortcode( 'add_to_cart_by_product' , 'wcatc_direct_add_to_cart_shortcode' );
 		}
 
 	}

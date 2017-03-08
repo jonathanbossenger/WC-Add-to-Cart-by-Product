@@ -1,6 +1,6 @@
-=== WooCommerce Add to Cart by Product ===
+=== Add to Cart by Product for WooCommerce ===
 Contributors: psykro
-Donate link: http://https://jonathanbossenger.com/buy-me-a-coffee/
+Donate link: https://jonathanbossenger.com/buy-me-a-coffee/
 Tags: woocommerce, add to cart
 Requires at least: 3.9
 Tested up to: 4.7
@@ -16,7 +16,7 @@ The plugin creates a shortcode [add_to_cart_by_product] which can be used in the
 
 == Installation ==
 
-Installing "WooCommerce Add to Cart by Product" can be done either by searching for "WooCommerce Add to Cart by Product" via the "Plugins > Add New" screen in your WordPress dashboard, or by using the following steps:
+Installing "Add to Cart by Product for WooCommerce" can be done either by searching for "Add to Cart by Product for WooCommerce" via the "Plugins > Add New" screen in your WordPress dashboard, or by using the following steps:
 
 1. Download the plugin via WordPress.org
 1. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
